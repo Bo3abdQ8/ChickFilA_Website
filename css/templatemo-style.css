@@ -317,11 +317,11 @@ p, address {
   list-style: none;
   display: block;
   margin-bottom: 0;
-  padding-right: 25px;
-  padding-left: 25px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 991px) {
   .tm-nav-li {
     padding-right: 15px;
     padding-left: 15px;
