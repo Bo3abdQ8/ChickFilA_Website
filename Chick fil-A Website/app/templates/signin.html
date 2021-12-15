@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Chick-fil-A® | Sign In</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+<link href="css/templatemo-style.css" rel="stylesheet" />
+</head>
+
+<div class="container">
+<!-- Top box -->
+<!-- Logo & Site Name -->
+<div class="placeholder">
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/a.jpeg">
+<div class="tm-header">
+<div class="row tm-header-inner">
+    <div class="col-md-6 col-12">
+        <img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" height="60"/> 
+        <div class="tm-site-text-box">
+            <h1 class="tm-site-title">Chick-fil-A</h1>
+            <h6 class="tm-site-description">We're cooking up your favorites</h6>	
+        </div>
+    </div>
+    <nav class="col-md-6 col-12 tm-nav">
+        <ul class="tm-nav-ul">
+            <li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
+            <li class="tm-nav-li"><a href="order.html" class="tm-nav-link">Order</a></li>
+            <li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+            <li class="tm-nav-li"><a href="contact1.html" class="tm-nav-link">Contact</a></li>
+            <li class="tm-nav-li"><a href="signin.html" class="tm-nav-link active">Sign In</a></li>
+        </ul>
+    </nav>	
+</div>
+</div>
+</div>
+</div>
+
+<main>
+<header class="row tm-welcome-section">
+<h2 class="col-12 text-center tm-section-title">Sign in</h2>
+</header>
+    
+<div class="tm-container-inner-2 tm-contact-section">
+<div class="row">
+<div class="col-md-6">
+    <div class="tm-container-inner-2 tm-contact-section">
+        <form action="/action_page.php">
+            <label for="uname">Username:</label><br>
+            <input type="text" id="uname" name="uname" style="width: 100%"><br>
+            <label for="pass">Password:</label><br>
+            <input type="text" id="pass" name="pass" style="width: 100%"><br><br>
+            <input type="submit" value="Login">
+          </form> 
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="tm-address-box">
+        <h4 class="tm-info-title tm-text-success">Sign up here</h4>
+        <form action="/action_page.php">
+    <div>    
+<p>Please fill in this form to create an account.</p>
+<hr>
+<label for="text"><b>First name</b></label> <br>
+<input type="text"  placeholder="Enter your first name" name="text" style="width: 150%" required>
+<br><br>
+    <label for="text"><b>Last name</b></label> <br>
+<input type="text" placeholder="Enter your last name" name="text" style="width: 150%" required>
+<br><br>
+<label for="email"><b>Email</b></label> <br>
+<input type="text" placeholder="Enter Email" name="email" style="width: 150%" required>
+<br><br>
+<label for="psw"><b>Password</b></label> <br>
+<input type="password" placeholder="Enter Password" name="psw"style="width: 150%" required><br><br>
+
+<label for="psw-repeat"><b>Repeat Password</b></label>  <br>
+<input type="password" placeholder="Repeat Password" name="psw-repeat" style="width: 150%" required>
+<br>
+<label>
+<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+</label>
+            
+
+<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
+   
+    <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+            
+</div>
+</form> 
+
+<footer class="tm-footer text-center">
+<p><a>Copyright &copy; 2021 Chick-fil-A
+| Design: Abdullah & Nick</a></p>
+</footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script>
+$(document).ready(function(){
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+this.classList.toggle("active");
+var panel = this.nextElementSibling;
+if (panel.style.maxHeight) {
+panel.style.maxHeight = null;
+} else {
+panel.style.maxHeight = panel.scrollHeight + "px";
+}
+});
+}	
+});
+</script>
+</body>
+</html>
